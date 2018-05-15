@@ -1,0 +1,6 @@
+framework module Pods_Ripple_GoUITests {
+  umbrella header "Pods-Ripple GoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

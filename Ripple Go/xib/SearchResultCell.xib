@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="proxima-nova-bold.otf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="proxima-nova.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchResultCell" customModule="Ripple_Go" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vivo City" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7K7-oK-p5G">
+                    <rect key="frame" x="23" y="14" width="336" height="21"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Harbour Front Walk" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbI-tD-OO5">
+                    <rect key="frame" x="23" y="35" width="336" height="13"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
+                    <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XbI-tD-OO5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="0fA-hk-spV"/>
+                <constraint firstItem="7K7-oK-p5G" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="14" id="HuE-9s-qve"/>
+                <constraint firstItem="7K7-oK-p5G" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="J4R-79-ocO"/>
+                <constraint firstItem="XbI-tD-OO5" firstAttribute="top" secondItem="7K7-oK-p5G" secondAttribute="bottom" id="SWa-oJ-RiW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XbI-tD-OO5" secondAttribute="trailing" constant="16" id="T9q-fV-8vK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XbI-tD-OO5" secondAttribute="bottom" constant="22" id="b58-ju-tm2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7K7-oK-p5G" secondAttribute="trailing" constant="16" id="xjU-qZ-2ug"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="line1" destination="7K7-oK-p5G" id="A3r-53-4PM"/>
+                <outlet property="line2" destination="XbI-tD-OO5" id="iA0-Q4-Ob7"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="96"/>
+        </view>
+    </objects>
+</document>
